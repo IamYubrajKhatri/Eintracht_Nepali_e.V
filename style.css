@@ -10,7 +10,7 @@
 display: flex; 
 align-items: center;
 justify-content: space-between;
-position: relative;
+position: sticky;
 top: 0;
 }
  /* navbar::before means the condition before or we can say to set background ..for eg the color we set black and content is blank
@@ -22,7 +22,7 @@ top: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
     /* logo*/
@@ -78,7 +78,7 @@ height: 614px;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 1 ;
     top:0px;
     left: 0px;
 }
@@ -91,11 +91,12 @@ height: 614px;
     color: white;
     text-align: center;
     font-size: 1.5rem;
+    font-family: cursive;
 }
  .h-primary{
     font-size: 3.8rem;
     padding: 12px;
-    }
+ }
     .h-primary-center{
         text-align: center;
         justify-content: center;
@@ -103,21 +104,21 @@ height: 614px;
     padding: 12px;
     background-color: #8ab579;
     color: white;
+    font-family: monospace;
     }
 
-.h-secondary{
-        font-size: 2.8rem;
-        padding: 12px;
-       
-    }
+
     
     .h-secondary-center{
-        font-size: 2.8rem;
+        font-size: 2.0rem;
         padding: 12px;
         text-align: center;
         justify-content: center;
         color: white;
+        font-family: 'Courier New', Courier, monospace;
+
     }
+
 .btn{
     padding: 6px 20px;
     border: 5px solid white;
@@ -128,16 +129,17 @@ height: 614px;
     border-radius: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
+  
 }
 .btn1{
-    padding: 1px 2px;
-    border: 2px solid white;
-    background-color: white;
+    padding: 6px 20px;
+    border: 5px solid white;
+    background-color: wheat;
     color: black;
-    margin: 2px;
-    font-size: 1rem;
-    border-radius: 7px;
-    font-family: sans-serif;
+    margin: 3px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
    
 
@@ -154,12 +156,10 @@ height: 614px;
 }
 /*blogs section*/
 #blogs{
-    
     display: flex;
-    
     background-color: #8ab579;
-
 }
+
 #blogs .box{
     border: 2px solid white;
     margin: 7px;
@@ -176,6 +176,61 @@ height: 614px;
     border-radius: 28px;
     
 }
-.box p{
+#blogs .box p{
     color: white;
+    font-family: cursive;
 }
+
+/*parts*/
+#parts{
+    display: flex;
+    background-color: #8ab579;
+}
+
+#parts .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 23px;
+    
+    
+}
+#parts .box p{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 23px;
+    margin: 10px;
+    color: white;
+    font-family: cursive;
+    
+}
+
+
+#parts .box{
+    border: 2px solid white;
+    margin: 5px;
+    padding: 34px;
+    border-radius: 23px ;
+    background-color:#8c0000; 
+    
+    
+}
+
+.he-secondary-center{
+    font-size: 2.0rem;
+    padding: 15px;
+    margin-top: -42px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.but{
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
