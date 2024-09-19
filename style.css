@@ -2,14 +2,19 @@
     margin: 0;
     padding: 0;
 }
-/* navigation*/
+/* navigation bar */
+ /*display flex means to put contents  display in a row
+ position relattive  means it adapts to its content */
+ 
 #navbar{
-display: flex;
+display: flex; 
 align-items: center;
 justify-content: space-between;
 position: relative;
+top: 0;
 }
-
+ /* navbar::before means the condition before or we can say to set background ..for eg the color we set black and content is blank
+ z-index-1 means it shows the content of navbar infront of the black background*/
 #navbar::before{
     content: "";
     background-color: black;
@@ -17,10 +22,8 @@ position: relative;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.9;
 }
-
-
 
     /* logo*/
 #logo{
@@ -32,10 +35,11 @@ position: relative;
     margin: 3px 5px;
 }
 
-    /* unsorted list*/
+    /* unorder list of navigation bar*/
 
 #navbar ul {
     display: flex;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
 #navbar ul li {
@@ -43,6 +47,7 @@ position: relative;
     font-size: 1.3rem;
     
 }
+ /* border radius means the circle or the edge will be curve*/
 #navbar ul li a {
     color: white;
     display: block;
@@ -52,8 +57,125 @@ position: relative;
     
 }
 #navbar ul li a:hover{
-    color: black;
+    color: red;
+    background-color: black;
+}
+
+
+ /* Home Section*/
+ #home{
+display: flex;
+flex-direction: column;
+padding: 3px 200px;
+align-items: center;
+justify-content: center;
+height: 614px;
+ }
+ #home::before{
+    content: "";
+    background:url(image/Background.1jpg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top:0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+ .h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    }
+    .h-primary-center{
+        text-align: center;
+        justify-content: center;
+        font-size: 3.8rem;
+    padding: 12px;
+    background-color: #8ab579;
+    color: white;
+    }
+
+.h-secondary{
+        font-size: 2.8rem;
+        padding: 12px;
+       
+    }
+    
+    .h-secondary-center{
+        font-size: 2.8rem;
+        padding: 12px;
+        text-align: center;
+        justify-content: center;
+        color: white;
+    }
+.btn{
+    padding: 6px 20px;
+    border: 5px solid white;
+    background: none;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+.btn1{
+    padding: 1px 2px;
+    border: 2px solid white;
     background-color: white;
+    color: black;
+    margin: 2px;
+    font-size: 1rem;
+    border-radius: 7px;
+    font-family: sans-serif;
+    cursor: pointer;
+   
+
+
+}
+
+.btn:hover{
+    color: red;
+    background-color: black;
+}
+.btn1:hover{
+    color: red;
+    background-color: black;
+}
+/*blogs section*/
+#blogs{
     
+    display: flex;
     
+    background-color: #8ab579;
+
+}
+#blogs .box{
+    border: 2px solid white;
+    margin: 7px;
+    padding: 34px;
+    border-radius: 40px ;
+    background-color: #8c0000;
+    
+}
+/*background-color: #d18585;*/
+#blogs .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 28px;
+    
+}
+.box p{
+    color: white;
 }
