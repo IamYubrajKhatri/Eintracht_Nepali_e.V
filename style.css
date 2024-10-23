@@ -26,7 +26,7 @@ top: 0;
     opacity: 0.5;
 }
 
-    /* logo*/
+    /* logo--Box1*/
 #logo{
     margin: 3px 5px;
 }
@@ -222,7 +222,8 @@ height: 614px;
     font-family: cursive;
 }
 
-/*parts*/
+/*parts 
+1rem=16px*/
 #parts{
     display: flex;
     background-color: #8ab579;
@@ -275,3 +276,254 @@ height: 614px;
     flex-direction: column;
 }
 
+
+footer{
+    background-color: black;
+}
+.footercontainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialicons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color:#8c0000; 
+}
+
+.socialicons a i{
+    font-size: 2em;
+    opacity: 0.9;
+}
+
+.socialicons a:hover{
+    transition: 0.5s;
+    background-color: black;
+}
+
+.socialicons a i:hover{
+    color: white;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+
+.footernav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footernav ul li{
+    list-style: none;
+}
+
+.footernav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 1;
+}
+
+.copyright{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+
+}
+.copyright p{
+color: red;
+opacity: 0.7;
+
+}
+
+
+#logo1{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+    height: 100%;
+}
+#logo1 img{
+
+height: 150px;
+}
+
+body{
+    background-image: url(image/allgemeinbackground.jpg);
+    
+
+}
+
+.login-container{
+    background: wheat;
+    opacity:0.9 ;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: block;
+    height: fit-content;
+    padding: 10px 72px;
+    box-shadow: rgba(0, 0,0, 0.1);
+    min-width: 25rem;
+}
+.login-container .social-login{
+    display: flex;
+    gap: 40px;
+}
+.social-login .social-button{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px 0px ;
+    border-radius: 5px;
+    border: 3px solid black;
+    background-color: #8c0000;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: 500;
+   
+
+}
+
+.social-login .social-button:hover{
+background: #8c0000;
+border-color: aliceblue;
+}
+
+
+.login-container .separator{
+    margin: 1.5rem 0;
+    text-align: center;
+    position: relative;
+
+}
+
+.login-container .separator span{
+    position: relative;
+  z-index: 1;
+    padding: 0 0.9rem;
+    font-weight: 500;
+    font-size: 1.06rem;
+    background: wheat;
+
+}
+
+.login-container .separator::after{
+  position: absolute;
+  content: "";
+  background: white;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  
+
+}
+.login-form .input-wrapper{
+    height: 54px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.login-form .input-wrapper .input-field{
+    width: 87%;
+    height: 100%;
+    border-radius: 0.31rem;
+    border: 2px solid black;
+    padding: 0 1rem 0 2rem;
+    outline: none;
+    font-size: 1.06rem;
+    transition: 0.2s ease;
+
+    
+}
+
+.login-form .input-wrapper .input-field:focus{
+    border-color: #8c0000 ;
+
+}
+.login-form .input-wrapper .input-field::placeholder{
+color: black;
+}
+
+.login-form .input-wrapper i{
+    color: #8c0000;
+    position: absolute;
+    top: 66%;
+    transform: translateY(-100%);
+    left: 0.9rem;
+    pointer-events: none;
+    transition: 0.2s ease;
+}
+
+.login-form .input-wrapper .input-field:focus ~ i{
+    color: aqua;
+
+}
+
+.login-form .forget-pass-link{
+    display: block;
+    width: fit-content;
+    margin-top: -0.46rem;
+}
+
+.login-form .login-button{
+    width: 100%;
+    height: 54px;
+    background: #8ab579;
+    margin-top: 2.19rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.125rem;
+    color: white;
+    border-radius: 0.31rem;
+}
+
+.login-form .login-button:hover{
+    background:#8c0000;
+
+}
+
+.login-container .signup-text{
+    text-align: center;
+    font-weight: 500;
+    margin: 1.75rem 0 0.31rem;
+}
+
+.login-container a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.login-container .signup-text{
+    font-size: 20px;
+}
+
+.login-container a:hover{
+    text-decoration: underline;
+}
+
+.social-login .social-button a i{
+font-size: 80px;
+}
